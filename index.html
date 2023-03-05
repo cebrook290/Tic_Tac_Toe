@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gradebook</title>'
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    <br>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">My Gradebook</span>
+    </nav> <br><br>
+    
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-assignment">Assigment</label>
+                        <input type="text" class="form-control" id="new-assignment">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-score">Score</label>
+                        <input type="number" class="form-control" id="new-score">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-due-date">Due Date</label>
+                        <input type="date" class="form-control" id="new-due-date">
+                    </div>
+                </div> 
+            </div>
+            <div>
+                <button id="add" class="btn btn-primary">Create</button>
+            </div>
+        </div>
+    </div><br>
+    <table id="list" class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Assignment</th>
+                <th>Score</th>
+                <th>Due Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+    </table>
+
+
+
+
+
+<script src="gradebook.js"></script>
+ <script src="node_modules/jquery/dist/jquery.js"></script>
+ <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    
+
+</body>
+</html>
